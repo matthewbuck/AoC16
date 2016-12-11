@@ -33,7 +33,7 @@ def compare(x):
 
 def main():
     x = []
-    with open('input.txt','r') as f:
+    with open('test.txt','r') as f:
      for line in f:
          x.append(process(line))
     print compare(x)

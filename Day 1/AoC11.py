@@ -4,6 +4,7 @@ def process(text_input):
     current_y = 0
     mod = {0:1,90:1,180:-1,270:-1}
     for item in text_input:
+        print current_x,current_y
         if 'R' in item:
             facing += 90
         else:
@@ -23,9 +24,10 @@ def process(text_input):
 
             
 def main():
-    f = open("input.txt","r+")
+    f = open("input.txt","r")
     m = f.read()
     n = m.split(', ')
+    n = n[:10]
     answer = process(n)
     print "The Bunny HQ is {} blocks away.".format(answer)
     return 0
