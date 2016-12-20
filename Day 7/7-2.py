@@ -20,7 +20,7 @@ def main():
     with open('input.txt','r') as f:
         for line in f:
             counter += ssl(process(line.strip()))
-    print counter
+    print '{} IP\'s support SSL.'.format(counter)
 
 if __name__ == '__main__':
     main()
